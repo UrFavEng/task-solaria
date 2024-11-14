@@ -126,7 +126,7 @@ function App() {
           width: "100%",
           height: "100%",
           backgroundColor: "#272727",
-          objectFit: "contain",
+          objectFit: "cover",
         }}
         src={image}
         alt="Background"
@@ -231,6 +231,8 @@ function App() {
           </div>
           <div>
             <label>Price Range:</label>
+            <br />
+            <label>Min:{filterPriceRange[0]}</label>
             <input
               placeholder="5"
               type="range"
@@ -246,6 +248,8 @@ function App() {
               }
               style={{ width: "100%", marginBottom: "10px" }}
             />
+            <label>Max:{filterPriceRange[1]}</label>
+
             <input
               placeholder="10"
               type="range"
