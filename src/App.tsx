@@ -126,7 +126,7 @@ function App() {
           width: "100%",
           height: "100%",
           backgroundColor: "#272727",
-          objectFit: "cover",
+          objectFit: "contain",
         }}
         src={image}
         alt="Background"
@@ -140,7 +140,7 @@ function App() {
           left: "0",
           width: "100%",
           height: "100%",
-          objectFit: "cover",
+          objectFit: "contain",
         }}
         onLoad={(e) => {
           const svgDoc = (e.target as HTMLObjectElement).contentDocument;
